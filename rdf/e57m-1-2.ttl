@@ -1,0 +1,3451 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m";
+owl:versionInfo "1.1";
+rdfs:comment "xs:schema - elementFormDefault: qualified"@en .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root";
+rdfs:comment "E57-root level metadata describes basic attributes about the entire file, such as the versionnumber of the file format or the number of 3D scans or 2D images contained in the file."@en .
+<http://data.duraark.eu/vocab/e57m/guidP> a rdf:Property;
+rdfs:label "guid"@en;
+rdfs:comment "A globally unique identification (GUID) String for the current version of the file. The standard does not prescribe the format of the GUID. Suggestions listed in the standard include IETF RFC4122 UUIDs or combinations of make/model/serial number of the scanner plus creationdatetime for non-networked equipment."@en;
+rdfs:range xs:string;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC> .
+<http://data.duraark.eu/vocab/e57m/E57rootP> owl:minCardinality "1"^^xs:int;
+a rdf:Property;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en;
+rdfs:comment "E57-root level metadata describes basic attributes about the entire file, such as the versionnumber of the file format or the number of 3D scans or 2D images contained in the file."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/versionP> a rdf:Property;
+rdfs:label "version"@en;
+rdfs:comment "The version of the file format. The current version (as of November 2014) is 1.0."@en;
+rdfs:range xs:string;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC> .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/creation_datetimeP> a rdf:Property;
+rdfs:label "creation_datetime"@en;
+rdfs:comment "Date and time the file was created."@en;
+rdfs:range xs:dateTime;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/coordinate_metadataP> rdfs:comment "Describes the Coordinate Reference System using the well-known text (WKT) specification as described in the Open Geospatial Consortiums's (OGC) specification for Coordinate Transformation Services.The WKT allows the 3D and 2D data stored in the file to be referenced in a standardized coordinate reference system."@en;
+a rdf:Property;
+rdfs:label "coordinate_metadata"@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC> .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/scan_countP> a rdf:Property;
+rdfs:label "scan_count"@en;
+rdfs:comment "Number of single scans the file aggregates. Within the e57 file, a scan is described by a data3D object."@en;
+rdfs:range xs:integer;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC> .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/image_countP> a rdf:Property;
+rdfs:label "image_count"@en;
+rdfs:comment "Number of 2D images the file contains. Within the e57 file, each 2D image is described by a Image2D object."@en;
+rdfs:range xs:integer;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/scan_sizeP> a rdf:Property;
+rdfs:label "scan_size"@en;
+rdfs:comment "Describes each scan by the following parameters: scanIndex number, number of Rows, number of Column, number of Points, number of groups, number of points per group, a boolean flag indicating whether the idElementName is ``columnIndex''."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/E57rootC> a owl:Class;
+rdfs:label "E57root" .
+<http://data.duraark.eu/vocab/e57m/image_sizeP> a rdf:Property;
+rdfs:label "image_size"@en;
+rdfs:comment "Describes each image by the following parameters: imageIndex number, image projection type (e.g., spherical, pinhole), image encoding type, image width, image height, number of bytes in the image, image mask type , (e.g., for PNG masks), image visual type."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/E57rootC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/E57rootP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/E57rootC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "E57root"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> rdfs:label "e57scan";
+a owl:Class;
+rdfs:comment "E57-scan-level metadata describes attributes about the scan."@en .
+<http://data.duraark.eu/vocab/e57m/guidP> a rdf:Property;
+rdfs:label "guid"@en;
+rdfs:comment "Global unique identifier for each scan element."@en;
+rdfs:range xs:string;
+owl:minCardinality "1"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> owl:maxCardinality "unbounded"^^xs:int;
+a rdf:Property;
+owl:minCardinality "1"^^xs:int;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en;
+rdfs:comment "E57-scan-level metadata describes attributes about the scan."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/nameP> a rdf:Property;
+rdfs:label "name"@en;
+rdfs:comment "A name for the 3D data as assigned by the user."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/original_guidsP> a rdf:Property;
+rdfs:label "original_guids"@en;
+rdfs:comment "If the object has been modified, i.e., is a result of merging muliple scans during processing, this element contains the guid of one or more scansElement which the data originated from."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/descriptionP> rdfs:comment "A description of the scans as supplied by the user."@en;
+a rdf:Property;
+rdfs:label "description"@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sensor_vendorP> owl:minCardinality "0"^^xs:int;
+rdfs:label "sensor_vendor"@en;
+rdfs:comment "Manufacturer of scanner/sensor used to capture the scan."@en;
+rdfs:range xs:string;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sensor_modelP> rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int;
+a rdf:Property;
+rdfs:label "sensor_model"@en;
+rdfs:comment "Model name of scanner/sensor used to capture the scan."@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sensor_serial_numberP> a rdf:Property;
+rdfs:label "sensor_serial_number"@en;
+rdfs:comment "Serial number of scanner/sensor used to capture the scan."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sensor_hardware_versionP> a rdf:Property;
+rdfs:label "sensor_hardware_version"@en;
+rdfs:comment "Hardware version of scanner/sensor used to capture the scan."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sensor_software_versionP> a rdf:Property;
+rdfs:label "sensor_software_version"@en;
+rdfs:comment "Data collection version running on scanner/sensor used to capture the scan."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sensor_firmware_versionP> rdfs:label "sensor_firmware_version"@en;
+rdfs:comment "Firmware version running on scanner/sensor."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/temperatureP> rdfs:comment "Weather data. Ambient temperature as measured by the sensor of the camera at the point of capture, in degree Celsius."@en;
+a rdf:Property;
+rdfs:label "temperature"@en;
+rdfs:range xs:float;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/relative_humidityP> a rdf:Property;
+rdfs:label "relative_humidity"@en;
+rdfs:comment "Weather data. Relative humidity as measured by the sensor of the camera at point of capture, in percent."@en;
+rdfs:range xs:float;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> rdfs:label "e57scan";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/atmospheric_pressureP> a rdf:Property;
+rdfs:label "atmospheric_pressure"@en;
+rdfs:comment "Weather data. Atmospheric pressure as measured by the sensor of the camera, at point of capture, in Pascal."@en;
+rdfs:range xs:float;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/acquisition_startP> a rdf:Property;
+rdfs:label "acquisition_start"@en;
+rdfs:comment "Start date and time of scans acquisition, as an ISO8601 date."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:dateTime .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/acquisition_endP> a rdf:Property;
+rdfs:label "acquisition_end"@en;
+rdfs:comment "End date and time of scans acquisition, as an ISO8601 date."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:dateTime .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:comment "Pose information is necessary when the 3D scan data is stored in a local coordinate system, which is relative to the sensor, as opposed to a file-based coordinate system. The rotation and translation information captured in pose allows for the transformation of the 3D data to a file-based coordinate system."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "These elements describe the scalar part of the quaternion (w), which shall be nonnegative, as well as the i (x), j (y) and k (z) coefficients of the quaternion."@en;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/w> a rdf:Property;
+rdfs:label "w"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/w> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:comment "These elements describe the scalar part of the quaternion (w), which shall be nonnegative, as well as the i (x), j (y) and k (z) coefficients of the quaternion."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en;
+rdfs:comment "Pose information is necessary when the 3D scan data is stored in a local coordinate system, which is relative to the sensor, as opposed to a file-based coordinate system. The rotation and translation information captured in pose allows for the transformation of the 3D data to a file-based coordinate system."@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:comment "Pose information is necessary when the 3D scan data is stored in a local coordinate system, which is relative to the sensor, as opposed to a file-based coordinate system. The rotation and translation information captured in pose allows for the transformation of the 3D data to a file-based coordinate system."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en;
+rdfs:comment "These elements describe the scalar part of the quaternion (w), which shall be nonnegative, as well as the i (x), j (y) and k (z) coefficients of the quaternion."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/x> owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+a rdf:Property;
+rdfs:label "x"@en .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/x> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/y> a rdf:Property;
+rdfs:label "y"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/y> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+a rdf:Property;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/z> a rdf:Property;
+rdfs:label "z"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/z> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "These elements describe the x, y and z coordinates of the translation, in meters."@en;
+rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m/x> a rdf:Property;
+rdfs:label "x"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/translationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/x> rdfs:domain <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property;
+rdfs:label "translation"@en;
+rdfs:comment "These elements describe the x, y and z coordinates of the translation, in meters."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/translationC> rdfs:label "translation"@en;
+rdfs:comment "These elements describe the x, y and z coordinates of the translation, in meters."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m/y> a rdf:Property;
+rdfs:label "y"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/translationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/y> rdfs:domain <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property;
+rdfs:label "translation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/translationC> rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m/z> a rdf:Property;
+rdfs:label "z"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/translationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/z> rdfs:domain <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property;
+rdfs:label "translation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/translationC> rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:comment "The points in of the scans can be organized in rows, columns or by return numbers. For the respective organization form in use, minimum and maximum values need to be defined to describe the valid indices for the bounds."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/row_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/row_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "row_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class;
+rdfs:label "index_bounds"@en;
+rdfs:comment "The points in of the scans can be organized in rows, columns or by return numbers. For the respective organization form in use, minimum and maximum values need to be defined to describe the valid indices for the bounds."@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> rdfs:label "index_bounds"@en;
+rdfs:comment "The points in of the scans can be organized in rows, columns or by return numbers. For the respective organization form in use, minimum and maximum values need to be defined to describe the valid indices for the bounds."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/row_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/row_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "row_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class;
+rdfs:label "index_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_boundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/col_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/col_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "col_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class;
+rdfs:label "index_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_boundsC> .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/col_maximumP> owl:maxCardinality "1"^^xs:int;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/col_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:minCardinality "0"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "col_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class;
+rdfs:label "index_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_boundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> rdfs:label "index_bounds"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/return_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/return_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "return_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class;
+rdfs:label "index_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_boundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/return_maximumP> owl:minCardinality "0"^^xs:int;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/return_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_boundsC>;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "return_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsC> a owl:Class;
+rdfs:label "index_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/index_boundsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "index_bounds"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_boundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:comment "E57 may use two different coordinate systems: cartesian or spherical. If the cartesian coordinate system is used, the minimum and maximum values for the bounding region needs to be defined: the min. and max. extend in the x direction, min and max extend in the y direction and min. and max. extend in the z direction, in meter."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/x_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/x_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "x_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class;
+rdfs:label "cartesian_bounds"@en;
+rdfs:comment "E57 may use two different coordinate systems: cartesian or spherical. If the cartesian coordinate system is used, the minimum and maximum values for the bounding region needs to be defined: the min. and max. extend in the x direction, min and max extend in the y direction and min. and max. extend in the z direction, in meter."@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> rdfs:comment "E57 may use two different coordinate systems: cartesian or spherical. If the cartesian coordinate system is used, the minimum and maximum values for the bounding region needs to be defined: the min. and max. extend in the x direction, min and max extend in the y direction and min. and max. extend in the z direction, in meter."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+owl:minCardinality "0"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/x_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/x_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "x_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class;
+rdfs:label "cartesian_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_boundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> rdfs:label "e57scan";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> rdfs:label "cartesian_bounds"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/y_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/y_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "y_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:label "e57scan"@en;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class;
+rdfs:label "cartesian_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_boundsC> .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/y_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/y_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "y_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class;
+rdfs:label "cartesian_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_boundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> rdfs:label "cartesian_bounds"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/z_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/z_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "z_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class;
+rdfs:label "cartesian_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/z_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/z_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "z_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsC> a owl:Class;
+rdfs:label "cartesian_bounds"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_boundsP> a rdf:Property;
+rdfs:label "cartesian_bounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_boundsC> .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:comment "E57 may use two different coordinate systems: cartesian or spherical. If the points are represented in spherical coordinates, the bounding region needs to be defined: min. and max. (range) extend in the r direction in meters t, min. and max. (elevation) extend in the phi direction in radians and min. and max. (azimuth) extend in the theta direction in radians."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/range_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/range_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "range_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class;
+rdfs:label "sphericalbounds"@en;
+rdfs:comment "E57 may use two different coordinate systems: cartesian or spherical. If the points are represented in spherical coordinates, the bounding region needs to be defined: min. and max. (range) extend in the r direction in meters t, min. and max. (elevation) extend in the phi direction in radians and min. and max. (azimuth) extend in the theta direction in radians."@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:comment "E57 may use two different coordinate systems: cartesian or spherical. If the points are represented in spherical coordinates, the bounding region needs to be defined: min. and max. (range) extend in the r direction in meters t, min. and max. (elevation) extend in the phi direction in radians and min. and max. (azimuth) extend in the theta direction in radians."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "0"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/range_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/range_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "range_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> rdfs:label "sphericalbounds"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/sphericalboundsC> .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/elevation_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/elevation_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "elevation_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class;
+rdfs:label "sphericalbounds"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/sphericalboundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/elevation_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/elevation_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "elevation_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class;
+rdfs:label "sphericalbounds"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> rdfs:label "sphericalbounds"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/sphericalboundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/azimuth_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/azimuth_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "azimuth_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class;
+rdfs:label "sphericalbounds"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/sphericalboundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/azimuth_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/azimuth_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/sphericalboundsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "azimuth_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsC> a owl:Class;
+rdfs:label "sphericalbounds"@en .
+<http://data.duraark.eu/vocab/e57m/sphericalboundsP> a rdf:Property;
+rdfs:label "sphericalbounds"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/sphericalboundsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsP> a rdf:Property;
+rdfs:label "intensity_limits"@en;
+rdfs:comment "The intensity describes the strength of the signal for a point. The intensity limits need to be defined if the points in the pointRecord of the  scans contain intensity information and if the sensor/scanner is has defined minimum and maximum values for the intensity which can be produced by the scanner/sensor. The standard does not define a unit for this element."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/intensity_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "intensity_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsC> a owl:Class;
+rdfs:label "intensity_limits"@en;
+rdfs:comment "The intensity describes the strength of the signal for a point. The intensity limits need to be defined if the points in the pointRecord of the  scans contain intensity information and if the sensor/scanner is has defined minimum and maximum values for the intensity which can be produced by the scanner/sensor. The standard does not define a unit for this element."@en .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsP> a rdf:Property;
+rdfs:comment "The intensity describes the strength of the signal for a point. The intensity limits need to be defined if the points in the pointRecord of the  scans contain intensity information and if the sensor/scanner is has defined minimum and maximum values for the intensity which can be produced by the scanner/sensor. The standard does not define a unit for this element."@en;
+rdfs:label "intensity_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_limitsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsP> a rdf:Property;
+rdfs:label "intensity_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "intensity_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsC> a owl:Class;
+rdfs:label "intensity_limits"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_limitsP> rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_limitsC>;
+a rdf:Property;
+rdfs:label "intensity_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:comment "PointRecords can be optionally described by color elements. These elements describe the limit of values for RGB, which the scanner is capable of producing. The standard does not prescribe a unit."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/color_red_minimumP> owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_red_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+rdfs:label "color_red_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> rdfs:label "color_limits"@en;
+a owl:Class;
+rdfs:comment "PointRecords can be optionally described by color elements. These elements describe the limit of values for RGB, which the scanner is capable of producing. The standard does not prescribe a unit."@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:comment "PointRecords can be optionally described by color elements. These elements describe the limit of values for RGB, which the scanner is capable of producing. The standard does not prescribe a unit."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_red_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_red_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "color_red_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/color_limitsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/color_green_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_green_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "color_green_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/color_limitsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_green_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_green_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "color_green_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/color_limitsC> .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/color_blue_minimumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_blue_minimumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "color_blue_minimum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/color_limitsC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/color_blue_maximumP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_blue_maximumP> rdfs:domain <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "color_blue_maximum"@en .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsC> a owl:Class;
+rdfs:label "color_limits"@en .
+<http://data.duraark.eu/vocab/e57m/color_limitsP> rdfs:range <http://data.duraark.eu/vocab/e57m/color_limitsC>;
+a rdf:Property;
+rdfs:label "color_limits"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/pointSizeP> a rdf:Property;
+rdfs:label "pointSize"@en;
+rdfs:comment "Returns the number of records found in the respective scan."@en;
+rdfs:range xs:integer;
+owl:minCardinality "1"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:comment "The point fields check the structure of the point records for the availability of standardized fields as well as the meaningfulness for some of the content. "@en;
+owl:minCardinality "1"^^xs:int;
+a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "Checks for the existence of a pointer to a buffer with the x, y and z coordinates, returning true for the respective element. The cartesian_invalid_state_field indicates whether the content of the x, y and z fields are not meaningful."@en;
+rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_x_field> a rdf:Property;
+rdfs:label "cartesian_x_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_x_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> rdfs:label "cartesian_fields"@en;
+a rdf:Property;
+rdfs:comment "Checks for the existence of a pointer to a buffer with the x, y and z coordinates, returning true for the respective element. The cartesian_invalid_state_field indicates whether the content of the x, y and z fields are not meaningful."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en;
+rdfs:comment "The point fields check the structure of the point records for the availability of standardized fields as well as the meaningfulness for some of the content. "@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:comment "The point fields check the structure of the point records for the availability of standardized fields as well as the meaningfulness for some of the content. "@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> rdfs:label "cartesian_fields"@en;
+rdfs:comment "Checks for the existence of a pointer to a buffer with the x, y and z coordinates, returning true for the respective element. The cartesian_invalid_state_field indicates whether the content of the x, y and z fields are not meaningful."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_y_field> a rdf:Property;
+rdfs:label "cartesian_y_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_y_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> a rdf:Property;
+rdfs:label "cartesian_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_z_field> a rdf:Property;
+rdfs:label "cartesian_z_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_z_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> a rdf:Property;
+rdfs:label "cartesian_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_invalid_state_field> a rdf:Property;
+rdfs:label "cartesian_invalid_state_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/cartesian_invalid_state_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> a rdf:Property;
+rdfs:label "cartesian_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/cartesian_fieldsC> rdfs:label "cartesian_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> owl:maxCardinality "1"^^xs:int;
+rdfs:comment "Checks for the existence of a pointer to a buffer with the x, y and z coordinates, returning true for the respective element. The spherical_invalid_state_field indicates whether the content of the x, y and z fields are not meaningful."@en;
+rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_range_field> a rdf:Property;
+rdfs:label "spherical_range_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_range_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> a rdf:Property;
+rdfs:label "spherical_fields"@en;
+rdfs:comment "Checks for the existence of a pointer to a buffer with the x, y and z coordinates, returning true for the respective element. The spherical_invalid_state_field indicates whether the content of the x, y and z fields are not meaningful."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> rdfs:label "spherical_fields"@en;
+rdfs:comment "Checks for the existence of a pointer to a buffer with the x, y and z coordinates, returning true for the respective element. The spherical_invalid_state_field indicates whether the content of the x, y and z fields are not meaningful."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_elevation_field> owl:minCardinality "1"^^xs:int;
+a rdf:Property;
+owl:maxCardinality "1"^^xs:int;
+rdfs:label "spherical_elevation_field"@en;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_elevation_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> rdfs:label "spherical_fields"@en;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_azimuth_field> a rdf:Property;
+rdfs:label "spherical_azimuth_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_azimuth_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> a rdf:Property;
+rdfs:label "spherical_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_invalid_state_field> a rdf:Property;
+rdfs:label "spherical_invalid_state_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_invalid_state_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsP> a rdf:Property;
+rdfs:label "spherical_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/spherical_fieldsC> rdfs:label "spherical_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "Returns the values of point_range min. and max. values. The point_range_scaled_integer field either indicates that the point records should be configured as a scaled integer node, returning 1, or returns the float node."@en;
+rdfs:label "point_range"@en .
+<http://data.duraark.eu/vocab/e57m/point_range_minimum> rdfs:label "point_range_minimum"@en;
+a rdf:Property;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/point_rangeC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_range_minimum> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_rangeC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> a rdf:Property;
+rdfs:label "point_range"@en;
+rdfs:comment "Returns the values of point_range min. and max. values. The point_range_scaled_integer field either indicates that the point records should be configured as a scaled integer node, returning 1, or returns the float node."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_rangeC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:label "point_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeC> rdfs:label "point_range"@en;
+rdfs:comment "Returns the values of point_range min. and max. values. The point_range_scaled_integer field either indicates that the point records should be configured as a scaled integer node, returning 1, or returns the float node."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "point_range"@en .
+<http://data.duraark.eu/vocab/e57m/point_range_maximum> a rdf:Property;
+rdfs:label "point_range_maximum"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/point_rangeC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_range_maximum> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_rangeC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> a rdf:Property;
+rdfs:label "point_range"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_rangeC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeC> rdfs:label "point_range"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "point_range"@en .
+<http://data.duraark.eu/vocab/e57m/point_range_scaled_integer> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_rangeC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_range_scaled_integer> rdfs:range xs:float;
+a rdf:Property;
+rdfs:label "point_range_scaled_integer"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/point_rangeP> a rdf:Property;
+rdfs:label "point_range"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_rangeC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_rangeC> rdfs:label "point_range"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/anglesP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/anglesP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "For scans in a spherical coordinate system, these values return the min. and max. angle which may be used. The angle_scaled_integer either returns a 1, indicating that the point record should be configured as a scaled integer node, or returns the float node."@en;
+rdfs:label "angles"@en .
+<http://data.duraark.eu/vocab/e57m/angle_minimum> a rdf:Property;
+rdfs:label "angle_minimum"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/anglesC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/angle_minimum> rdfs:domain <http://data.duraark.eu/vocab/e57m/anglesC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/anglesP> a rdf:Property;
+rdfs:label "angles"@en;
+rdfs:comment "For scans in a spherical coordinate system, these values return the min. and max. angle which may be used. The angle_scaled_integer either returns a 1, indicating that the point record should be configured as a scaled integer node, or returns the float node."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/anglesC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/anglesC> rdfs:label "angles"@en;
+rdfs:comment "For scans in a spherical coordinate system, these values return the min. and max. angle which may be used. The angle_scaled_integer either returns a 1, indicating that the point record should be configured as a scaled integer node, or returns the float node."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/anglesP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/anglesP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "angles"@en .
+<http://data.duraark.eu/vocab/e57m/angle_maximum> owl:maxCardinality "1"^^xs:int;
+a rdf:Property;
+rdfs:label "angle_maximum"@en;
+owl:minCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/anglesC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/angle_maximum> rdfs:domain <http://data.duraark.eu/vocab/e57m/anglesC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/anglesP> a rdf:Property;
+rdfs:label "angles"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/anglesC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/anglesC> rdfs:label "angles"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/anglesP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/anglesP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "angles"@en .
+<http://data.duraark.eu/vocab/e57m/angle_scaled_integer> a rdf:Property;
+rdfs:label "angle_scaled_integer"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/anglesC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/angle_scaled_integer> rdfs:domain <http://data.duraark.eu/vocab/e57m/anglesC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/anglesP> a rdf:Property;
+rdfs:label "angles"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/anglesC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/anglesC> rdfs:label "angles"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+a rdf:Property;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:comment "The index fields indicate if the respective index fields for the type of index (row, column, return) are active. For the return index, the count field is checked against being active as well. The maximum fields return the maximum values for the respective index, the minimum is assumed to be set to 0."@en;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/row_index_field> a rdf:Property;
+rdfs:label "row_index_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/row_index_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:comment "The index fields indicate if the respective index fields for the type of index (row, column, return) are active. For the return index, the count field is checked against being active as well. The maximum fields return the maximum values for the respective index, the minimum is assumed to be set to 0."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> rdfs:label "point_fields"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en;
+rdfs:comment "The index fields indicate if the respective index fields for the type of index (row, column, return) are active. For the return index, the count field is checked against being active as well. The maximum fields return the maximum values for the respective index, the minimum is assumed to be set to 0."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/row_index_maximum> a rdf:Property;
+rdfs:label "row_index_maximum"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/row_index_maximum> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/column_index_field> a rdf:Property;
+rdfs:label "column_index_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/column_index_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> rdfs:label "point_fields"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/column_index_maximum> owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+a rdf:Property;
+rdfs:label "column_index_maximum"@en;
+owl:minCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/column_index_maximum> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/return_index_field> a rdf:Property;
+rdfs:label "return_index_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/return_index_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/return_count_field> a rdf:Property;
+rdfs:label "return_count_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/return_count_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m/return_maximum> rdfs:label "return_maximum"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/return_maximum> rdfs:domain <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/index_fieldsP> a rdf:Property;
+rdfs:label "index_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/index_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/index_fieldsC> rdfs:label "index_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> rdfs:label "e57scan";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "Checks for the presence and validity of a time_stamp in the file, returning true when time_stamp exists.Time_Maximum indicates a maximum values which point record time_stamp fields should be configured with."@en;
+rdfs:label "time_fields"@en .
+<http://data.duraark.eu/vocab/e57m/time_stamp_field> owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean;
+a rdf:Property;
+rdfs:label "time_stamp_field"@en;
+owl:minCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/time_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/time_stamp_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/time_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> a rdf:Property;
+rdfs:label "time_fields"@en;
+rdfs:comment "Checks for the presence and validity of a time_stamp in the file, returning true when time_stamp exists.Time_Maximum indicates a maximum values which point record time_stamp fields should be configured with."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/time_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/time_fieldsC> rdfs:label "time_fields"@en;
+rdfs:comment "Checks for the presence and validity of a time_stamp in the file, returning true when time_stamp exists.Time_Maximum indicates a maximum values which point record time_stamp fields should be configured with."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> rdfs:label "time_fields"@en .
+<http://data.duraark.eu/vocab/e57m/is_Time_Stamp_invalid> a rdf:Property;
+rdfs:label "is_Time_Stamp_invalid"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/time_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/is_Time_Stamp_invalid> rdfs:domain <http://data.duraark.eu/vocab/e57m/time_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> a rdf:Property;
+rdfs:label "time_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/time_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/time_fieldsC> rdfs:label "time_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> rdfs:label "e57scan";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property;
+rdfs:label "time_fields"@en .
+<http://data.duraark.eu/vocab/e57m/time_Maximum> a rdf:Property;
+rdfs:label "time_Maximum"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/time_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/time_Maximum> rdfs:domain <http://data.duraark.eu/vocab/e57m/time_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/time_fieldsP> a rdf:Property;
+rdfs:label "time_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/time_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/time_fieldsC> rdfs:label "time_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "Checks for the presence and use of intensity and color schemes in the respective fields, returning true when found. The intensity_scaled_integer field indicates either that the point record intensity fields should be configured as a scaled integer node (returning 1) or returns the float node or the integer node. The is_color_invalid_field indicates whether the content of the color fields for red, green and blue are not meaningful."@en;
+rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_field> a rdf:Property;
+rdfs:label "intensity_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:comment "Checks for the presence and use of intensity and color schemes in the respective fields, returning true when found. The intensity_scaled_integer field indicates either that the point record intensity fields should be configured as a scaled integer node (returning 1) or returns the float node or the integer node. The is_color_invalid_field indicates whether the content of the color fields for red, green and blue are not meaningful."@en;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en;
+rdfs:comment "Checks for the presence and use of intensity and color schemes in the respective fields, returning true when found. The intensity_scaled_integer field indicates either that the point record intensity fields should be configured as a scaled integer node (returning 1) or returns the float node or the integer node. The is_color_invalid_field indicates whether the content of the color fields for red, green and blue are not meaningful."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/is_intensity_invalid_field> a rdf:Property;
+rdfs:label "is_intensity_invalid_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/is_intensity_invalid_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_scaled_integer> owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_scaled_integer> a rdf:Property;
+rdfs:label "intensity_scaled_integer"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> rdfs:label "e57scan";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/color_red_field> a rdf:Property;
+rdfs:label "color_red_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_red_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class;
+rdfs:label "point_fields"@en .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+a rdf:Property;
+rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/color_green_field> a rdf:Property;
+rdfs:label "color_green_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_green_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> rdfs:label "point_fields"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/color_blue_field> a rdf:Property;
+rdfs:label "color_blue_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/color_blue_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> rdfs:label "point_fields"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m> dc:title "e57m";
+a owl:Ontology .
+<http://data.duraark.eu/vocab/e57m/e57scanC> a owl:Class;
+rdfs:label "e57scan" .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> rdfs:domain <http://data.duraark.eu/vocab/e57m/point_fieldsC>;
+rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m/is_color_invalid_field> rdfs:label "is_color_invalid_field"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+a rdf:Property;
+rdfs:range xs:boolean .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/is_color_invalid_field> rdfs:domain <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/e57scanP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57scan"@en .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> a rdf:Property;
+rdfs:label "intensity_color_fields"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/point_fieldsC> rdfs:label "point_fields"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/point_fieldsP> a rdf:Property;
+rdfs:label "point_fields"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57scanC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/point_fieldsC> .
+<http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC> rdfs:label "intensity_color_fields"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image";
+rdfs:comment "Information at the images level describes each 2D image contained within the E57 file."@en .
+<http://data.duraark.eu/vocab/e57m/nameP> a rdf:Property;
+rdfs:label "name"@en;
+rdfs:comment "A name for the image as assigned by the user."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "unbounded"^^xs:int;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en;
+rdfs:comment "Information at the images level describes each 2D image contained within the E57 file."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/guidP> rdfs:label "guid"@en;
+a rdf:Property;
+rdfs:comment "Global unique identifier for each image element."@en;
+rdfs:range xs:string;
+owl:minCardinality "1"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/representationP> a rdf:Property;
+rdfs:label "representation"@en;
+rdfs:comment "Describes the representation type of the image. The representation type can either be defined by the spherical, cylindrical or pinhole camera projection model - or follow no camera projection model, in which case the image shall serve as a visual reference only."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/descriptionP> a rdf:Property;
+rdfs:label "description"@en;
+rdfs:comment "A description of the image as supplied by the user."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/acquisition_datetimeP> rdfs:label "acquisition_datetime"@en;
+rdfs:comment "Timestamp of the acquisition time of the image, as an ISO8601 date."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:range xs:dateTime;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/associated_data3D_guidP> owl:minCardinality "0"^^xs:int;
+rdfs:comment "Lists the guid of the 3D scan image, which this image corresponds with."@en;
+rdfs:range xs:string;
+a rdf:Property;
+rdfs:label "associated_data3D_guid"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/sensor_vendorP> rdfs:comment "Manufactures of the sensor which was used to capture this image."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+a rdf:Property;
+rdfs:label "sensor_vendor"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/sensor_modelP> a rdf:Property;
+rdfs:label "sensor_model"@en;
+rdfs:comment "The model name of the sensor which was used to capture this image."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/sensor_serial_numberP> a rdf:Property;
+rdfs:label "sensor_serial_number"@en;
+rdfs:comment "The serial number of the sensor which was used to capture this image."@en;
+rdfs:range xs:string;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:comment "Pose information is necessary when the image data is stored in a local coordinate system, which is relative to the sensor, as opposed to a file-based coordinate system. The rotation and translation information captured in pose allows for the transformation of the Image data to a file-based coordinate system."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "These elements describe the scalar part of the quaternion (w), which shall be nonnegative, as well as the i (x), j (y) and k (z) coefficients of the quaternion."@en;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/w> a rdf:Property;
+rdfs:label "w"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/w> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:comment "These elements describe the scalar part of the quaternion (w), which shall be nonnegative, as well as the i (x), j (y) and k (z) coefficients of the quaternion."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> rdfs:label "pose"@en;
+a owl:Class;
+rdfs:comment "Pose information is necessary when the image data is stored in a local coordinate system, which is relative to the sensor, as opposed to a file-based coordinate system. The rotation and translation information captured in pose allows for the transformation of the Image data to a file-based coordinate system."@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:comment "Pose information is necessary when the image data is stored in a local coordinate system, which is relative to the sensor, as opposed to a file-based coordinate system. The rotation and translation information captured in pose allows for the transformation of the Image data to a file-based coordinate system."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en;
+rdfs:comment "These elements describe the scalar part of the quaternion (w), which shall be nonnegative, as well as the i (x), j (y) and k (z) coefficients of the quaternion."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/x> owl:maxCardinality "1"^^xs:int;
+a rdf:Property;
+rdfs:label "x"@en;
+owl:minCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/x> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/y> a rdf:Property;
+rdfs:label "y"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/y> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> rdfs:label "pose"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/poseP> rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/rotationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m/z> rdfs:label "z"@en;
+a rdf:Property;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/rotationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/z> rdfs:domain <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/rotationP> a rdf:Property;
+rdfs:label "rotation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/rotationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/rotationC> rdfs:label "rotation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:comment "These elements describe the x, y and z coordinates of the translation, in meters."@en;
+rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m/x> a rdf:Property;
+rdfs:label "x"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/translationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/x> rdfs:domain <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property;
+rdfs:label "translation"@en;
+rdfs:comment "These elements describe the x, y and z coordinates of the translation, in meters."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/translationC> rdfs:label "translation"@en;
+rdfs:comment "These elements describe the x, y and z coordinates of the translation, in meters."@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m/y> a rdf:Property;
+owl:minCardinality "1"^^xs:int;
+rdfs:label "y"@en;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/translationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/y> rdfs:domain <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:label "translation"@en;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> rdfs:range <http://data.duraark.eu/vocab/e57m/poseC>;
+a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/translationC> rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/poseP> a rdf:Property;
+rdfs:label "pose"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/translationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/poseC>;
+a rdf:Property;
+rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m/z> a rdf:Property;
+rdfs:label "z"@en;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float .
+<http://data.duraark.eu/vocab/e57m/translationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/z> rdfs:domain <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/translationP> a rdf:Property;
+rdfs:label "translation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/translationC> .
+<http://data.duraark.eu/vocab/e57m/poseC> a owl:Class;
+rdfs:label "pose"@en .
+<http://data.duraark.eu/vocab/e57m/poseP> rdfs:label "pose"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/vocab/e57m/translationC> rdfs:label "translation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "unbounded"^^xs:int;
+a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:comment "These elements are used, if an image is to be used as a visual reference. The image is then described with the size of the image data (either jpeg or png) found in the blob node,  if used - the size of the image mask in the blob node as well as the image width and height in pixels."@en;
+owl:minCardinality "0"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+rdfs:label "jpeg_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class;
+rdfs:label "visual_ref_representation"@en;
+rdfs:comment "These elements are used, if an image is to be used as a visual reference. The image is then described with the size of the image data (either jpeg or png) found in the blob node,  if used - the size of the image mask in the blob node as well as the image width and height in pixels."@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> rdfs:label "visual_ref_representation"@en;
+a rdf:Property;
+rdfs:comment "These elements are used, if an image is to be used as a visual reference. The image is then described with the size of the image data (either jpeg or png) found in the blob node,  if used - the size of the image mask in the blob node as well as the image width and height in pixels."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "png_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class;
+rdfs:label "visual_ref_representation"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/visual_ref_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_mask_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class;
+rdfs:label "visual_ref_representation"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> rdfs:label "visual_ref_representation"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/visual_ref_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class;
+rdfs:label "visual_ref_representation"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/visual_ref_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> a rdf:Property;
+rdfs:label "visual_ref_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationC> a owl:Class;
+rdfs:label "visual_ref_representation"@en .
+<http://data.duraark.eu/vocab/e57m/visual_ref_representationP> rdfs:label "visual_ref_representation"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/visual_ref_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the spherical camera projection model. The image is then described through the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and heights in pixel as well as by the pixel’s width and height in radians."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "jpeg_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the spherical camera projection model. The image is then described through the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and heights in pixel as well as by the pixel’s width and height in radians."@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> rdfs:label "spherical_representation"@en;
+a rdf:Property;
+rdfs:comment "These elements are used for images which are mapped to 3D using the spherical camera projection model. The image is then described through the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and heights in pixel as well as by the pixel’s width and height in radians."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "png_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> rdfs:label "spherical_representation"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+a rdf:Property;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_mask_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> rdfs:label "spherical_representation"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "pixel_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "pixel_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationC> a owl:Class;
+rdfs:label "spherical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/spherical_representationP> a rdf:Property;
+rdfs:label "spherical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/spherical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> rdfs:label "e57image";
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the pinhole camera projection model. The image is then described with the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and height in pixel, the camera's focal length in meters, the pixels' width and height, both in meters, as well as the x and y coordinates of the principal point found in the image, in pixels."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "jpeg_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the pinhole camera projection model. The image is then described with the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and height in pixel, the camera's focal length in meters, the pixels' width and height, both in meters, as well as the x and y coordinates of the principal point found in the image, in pixels."@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:comment "These elements are used for images which are mapped to 3D using the pinhole camera projection model. The image is then described with the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and height in pixel, the camera's focal length in meters, the pixels' width and height, both in meters, as well as the x and y coordinates of the principal point found in the image, in pixels."@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+a rdf:Property;
+rdfs:label "png_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_mask_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> rdfs:label "pinhole_representation"@en;
+a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:label "pinhole_representation"@en;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/focal_lengthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/focal_lengthP> owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "focal_length"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "pixel_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "pixel_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/principal_point_xP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/principal_point_xP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "principal_point_x"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/principal_point_yP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/principal_point_yP> rdfs:domain <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "principal_point_y"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationC> a owl:Class;
+rdfs:label "pinhole_representation"@en .
+<http://data.duraark.eu/vocab/e57m/pinhole_representationP> rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property;
+rdfs:label "pinhole_representation"@en;
+rdfs:range <http://data.duraark.eu/vocab/e57m/pinhole_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the cylindrical projection model. The image is then described with the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and height in pixel, the camera’s focal length in meters, the pixels’ width in radians and height in meters as well as the radius of the cylinder in meters and the y coordinates of the principal point found in the image, in pixels."@en;
+owl:minCardinality "0"^^xs:int;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "jpeg_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the cylindrical projection model. The image is then described with the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and height in pixel, the camera’s focal length in meters, the pixels’ width in radians and height in meters as well as the radius of the cylinder in meters and the y coordinates of the principal point found in the image, in pixels."@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:comment "These elements are used for images which are mapped to 3D using the cylindrical projection model. The image is then described with the size of the image data (either jpeg or png) found in the blob node, if used - the size of the image mask in the blob node, the image width and height in pixel, the camera’s focal length in meters, the pixels’ width in radians and height in meters as well as the radius of the cylinder in meters and the y coordinates of the principal point found in the image, in pixels."@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "unbounded"^^xs:int .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "png_image_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "0"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+a rdf:Property;
+rdfs:label "image_mask_size"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/image_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/image_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:integer;
+rdfs:label "image_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "pixel_width"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "pixel_height"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> rdfs:label "cylindrical_representation"@en;
+a rdf:Property;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC> .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/radiusP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/radiusP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "radius"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+a rdf:Property;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m> a owl:Ontology;
+dc:title "e57m" .
+<http://data.duraark.eu/vocab/e57m/e57imageC> a owl:Class;
+rdfs:label "e57image" .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC> .
+<http://data.duraark.eu/vocab/e57m/principal_point_yP> a rdf:Property .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class .
+<http://data.duraark.eu/vocab/e57m/principal_point_yP> rdfs:domain <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+owl:minCardinality "1"^^xs:int;
+owl:maxCardinality "1"^^xs:int;
+rdfs:range xs:float;
+rdfs:label "principal_point_y"@en .
+<http://data.duraark.eu/vocab/e57m/e57imageP> a rdf:Property;
+rdfs:range <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:domain <http://data.duraark.eu/vocab/buildm/E57File>;
+rdfs:label "e57image"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationC> a owl:Class;
+rdfs:label "cylindrical_representation"@en .
+<http://data.duraark.eu/vocab/e57m/cylindrical_representationP> a rdf:Property;
+rdfs:label "cylindrical_representation"@en;
+rdfs:domain <http://data.duraark.eu/vocab/e57m/e57imageC>;
+rdfs:range <http://data.duraark.eu/vocab/e57m/cylindrical_representationC> .

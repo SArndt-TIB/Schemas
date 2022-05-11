@@ -1,0 +1,194 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> a <http://data.duraark.eu/vocab/e57m/e57scanC>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/guidP> "{F0B3C105-325B-4FC9-9E01-3130153F9800}";
+<http://data.duraark.eu/vocab/e57m/nameP> "parking000";
+<http://data.duraark.eu/vocab/e57m/original_guidsP> "{G1C4D216-436C-4FC9-9E01-4241264G0911}";
+<http://data.duraark.eu/vocab/e57m/descriptionP> "Part1 Scan of 1st floor hallway.";
+<http://data.duraark.eu/vocab/e57m/sensor_vendorP> "FARO Scanner Production GmbH";
+<http://data.duraark.eu/vocab/e57m/sensor_modelP> "FARO Focus 3D S 120";
+<http://data.duraark.eu/vocab/e57m/sensor_serial_numberP> "XXY0714889234T";
+<http://data.duraark.eu/vocab/e57m/sensor_hardware_versionP> "3.001.124";
+<http://data.duraark.eu/vocab/e57m/sensor_software_versionP> "4.8.0.23502";
+<http://data.duraark.eu/vocab/e57m/sensor_firmware_versionP> "\"iQLib\" 5.0.6.30068";
+<http://data.duraark.eu/vocab/e57m/temperatureP> "18.4"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/relative_humidityP> "23"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/atmospheric_pressureP> "101325"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/acquisition_startP> "2011-11-02T13:45:21"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+<http://data.duraark.eu/vocab/e57m/acquisition_endP> "2011-11-02T14:34:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/translationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/translationC>;
+<http://data.duraark.eu/vocab/e57m/x> "89.951072690000004"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/y> "1.8420018"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/z> "2e-008"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/translationP> <http://data.duraark.eu/translationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/rotationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/rotationC>;
+<http://data.duraark.eu/vocab/e57m/w> "0.99996960774189081"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/y> "-0.0022701539983015365"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/z> "0"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/x> "-0.0074585516927261801"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/rotationP> <http://data.duraark.eu/rotationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/poseP> <http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/index_boundsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/index_boundsC>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/row_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/row_maximumP> "3470"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/col_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/col_maximumP> "8213"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/return_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/return_maximumP> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/index_boundsP> <http://data.duraark.eu/index_boundsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/cartesian_boundsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/cartesian_boundsC>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/x_minimumP> "-68.432470999999993"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/x_maximumP> "57.134830999999998"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/y_minimumP> "-59.897230999999998"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/y_maximumP> "70.512130999999997"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/z_minimumP> "-2.0202709999999997"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/z_maximumP> "3.779801"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/cartesian_boundsP> <http://data.duraark.eu/cartesian_boundsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/sphericalboundsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/sphericalboundsC>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/azimuth_maximumP> "-6.4112263142845904e-007"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/azimuth_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/elevation_maximumP> "1.5701933463079427"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/elevation_minimumP> "-1.0909121353667537"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/range_minimumP> "1.6562939999999999"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/range_maximumP> "90.929899999999989"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/sphericalboundsP> <http://data.duraark.eu/sphericalboundsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/intensity_limitsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/intensity_limitsC>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/intensity_maximumP> "1"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/intensity_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/intensity_limitsP> <http://data.duraark.eu/intensity_limitsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D>;
+<http://data.duraark.eu/vocab/e57m/pointSizeP> "26602731"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/color_limitsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a owl:NamedIndividual,<http://data.duraark.eu/vocab/e57m/color_limitsC>;
+<http://data.duraark.eu/vocab/e57m/color_blue_maximumP> "255"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/color_blue_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/color_green_maximumP> "255"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/color_green_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/color_red_maximumP> "255"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/color_red_minimumP> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/color_limitsP> <http://data.duraark.eu/color_limitsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/point_fieldsC>,owl:NamedIndividual .
+<http://data.duraark.eu/anglesC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/anglesC>;
+<http://data.duraark.eu/vocab/e57m/angle_maximum> "0"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/angle_minimum> "0"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/angle_scaled_integer> "0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/anglesP> <http://data.duraark.eu/anglesC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/cartesian_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/cartesian_fieldsC>;
+<http://data.duraark.eu/vocab/e57m/cartesian_invalid_state_field> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/cartesian_x_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/cartesian_y_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/cartesian_z_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/cartesian_fieldsP> <http://data.duraark.eu/cartesian_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/index_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/index_fieldsC>;
+<http://data.duraark.eu/vocab/e57m/column_index_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/column_index_maximum> "4294967295"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/return_count_field> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/return_index_field> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/return_maximum> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/row_index_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/row_index_maximum> "4294967295"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/index_fieldsP> <http://data.duraark.eu/index_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/intensity_color_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC>;
+<http://data.duraark.eu/vocab/e57m/color_blue_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/color_green_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/color_red_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/intensity_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/intensity_scaled_integer> "0.00048851978505129456"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/is_color_invalid_field> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/is_intensity_invalid_field> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP> <http://data.duraark.eu/intensity_color_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/spherical_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/spherical_fieldsC>;
+<http://data.duraark.eu/vocab/e57m/spherical_azimuth_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/spherical_elevation_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/spherical_invalid_state_field> "false"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/spherical_range_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/spherical_fieldsP> <http://data.duraark.eu/spherical_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/time_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/time_fieldsC>;
+<http://data.duraark.eu/vocab/e57m/is_Time_Stamp_invalid> "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+<http://data.duraark.eu/vocab/e57m/time_Maximum> "0"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/time_stamp_field> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/time_fieldsP> <http://data.duraark.eu/time_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/point_rangeC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> a <http://data.duraark.eu/vocab/e57m/point_rangeC>;
+<http://data.duraark.eu/vocab/e57m/point_range_maximum> "-268.43545499999999"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/point_range_minimum> "268.435454999999999"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/point_range_scaled_integer> "9.9999999999999995e-007"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> <http://data.duraark.eu/vocab/e57m/point_rangeP> <http://data.duraark.eu/point_rangeC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/point_fieldsP> <http://data.duraark.eu/point_fieldsC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7BF0B3C105-325B-4FC9-9E01-3130153F9800%7D> .
+<http://data.duraark.eu/E57rootC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/guidP> "{7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B}";
+a owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/versionP> "1.0";
+a <http://data.duraark.eu/vocab/e57m/E57rootC>;
+<http://data.duraark.eu/vocab/e57m/creation_datetimeP> "2011-11-03T19:05:35"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+<http://data.duraark.eu/vocab/e57m/coordinate_metadataP> "undefined";
+<http://data.duraark.eu/vocab/e57m/scan_countP> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_countP> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/scan_sizeP> "10";
+<http://data.duraark.eu/vocab/e57m/image_sizeP> "255" .
+<http://data.duraark.eu/vocab/e57m/dummy_rdf_data> <http://data.duraark.eu/vocab/e57m/E57rootP> <http://data.duraark.eu/E57rootC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D>;
+a <http://data.duraark.eu/vocab/buildm/E57File>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/e57imageP> <http://data.duraark.eu/e57imageC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D>;
+<http://data.duraark.eu/vocab/e57m/e57scanP> <http://data.duraark.eu/e57scanC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> .
+<http://data.duraark.eu/pinhole_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> <http://data.duraark.eu/vocab/e57m/pixel_widthP> "0.0076745772193576565"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> "0.007666681778157584"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/principal_point_xP> "4576"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/principal_point_yP> "1735"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/e57imageC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/pinhole_representationP> <http://data.duraark.eu/pinhole_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D>;
+a <http://data.duraark.eu/vocab/e57m/e57imageC>,owl:NamedIndividual;
+<http://data.duraark.eu/vocab/e57m/nameP> "parking000image";
+<http://data.duraark.eu/vocab/e57m/guidP> "{76BD148C-D22A-4FE3-8CB2-0FB01F96698B}";
+<http://data.duraark.eu/vocab/e57m/representationP> "spherical";
+<http://data.duraark.eu/vocab/e57m/descriptionP> "This is a jpeg image taken at the same time as the 3D capture.";
+<http://data.duraark.eu/vocab/e57m/acquisition_datetimeP> "2011-11-02T14:34:32"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+<http://data.duraark.eu/vocab/e57m/associated_data3D_guidP> "{F0B3C105-325B-4FC9-9E01-3130153F9800}";
+<http://data.duraark.eu/vocab/e57m/sensor_vendorP> "FARO Scanner Production GmbH";
+<http://data.duraark.eu/vocab/e57m/sensor_modelP> "FARO Focus 3D S210";
+<http://data.duraark.eu/vocab/e57m/sensor_serial_numberP> "XXXY0714889234T" .
+<http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> a <http://data.duraark.eu/vocab/e57m/poseC> .
+<http://data.duraark.eu/rotationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> a <http://data.duraark.eu/vocab/e57m/rotationC>;
+<http://data.duraark.eu/vocab/e57m/w> "0.70283815264201144"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/x> "0.077691052038131911"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/y> "0.088163333920523737"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/z> "0.070127669443617587"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> <http://data.duraark.eu/vocab/e57m/rotationC> <http://data.duraark.eu/rotationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> .
+<http://data.duraark.eu/translationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> <http://data.duraark.eu/vocab/e57m/x> "89.951072690000004"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/y> "1.8420018"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/z> "2e-008"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> <http://data.duraark.eu/vocab/e57m/translationP> <http://data.duraark.eu/translationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> .
+<http://data.duraark.eu/e57imageC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/poseP> <http://data.duraark.eu/poseC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> .
+<http://data.duraark.eu/visual_ref_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> a <http://data.duraark.eu/vocab/e57m/visual_ref_representationC>;
+<http://data.duraark.eu/vocab/e57m/image_heightP> "3471"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_widthP> "8187"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> "23551883"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/e57imageC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/visual_ref_representationP> <http://data.duraark.eu/visual_ref_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> .
+<http://data.duraark.eu/spherical_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> a <http://data.duraark.eu/vocab/e57m/spherical_representationC>;
+<http://data.duraark.eu/vocab/e57m/image_heightP> "3471"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_widthP> "8187"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> "0.007666681778157584"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> "0.0076745772193576565"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> "23551883"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://data.duraark.eu/e57imageC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/spherical_representationP> <http://data.duraark.eu/spherical_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> .
+<http://data.duraark.eu/pinhole_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> a <http://data.duraark.eu/vocab/e57m/pinhole_representationC>;
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> "23551883"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_widthP> "8187"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_heightP> "3471"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/focal_lengthP> "1.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/cylindrical_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> a <http://data.duraark.eu/vocab/e57m/cylindrical_representationC>;
+<http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP> "23551883"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/png_image_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_mask_sizeP> "0"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_widthP> "8187"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/image_heightP> "3471"^^<http://www.w3.org/2001/XMLSchema#int>;
+<http://data.duraark.eu/vocab/e57m/pixel_widthP> "1.5"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/pixel_heightP> "0.0076745772193576565"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/radiusP> "0.007666681778157584"^^<http://www.w3.org/2001/XMLSchema#float>;
+<http://data.duraark.eu/vocab/e57m/principal_point_yP> "1.25"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://data.duraark.eu/e57imageC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D> <http://data.duraark.eu/vocab/e57m/cylindrical_representationP> <http://data.duraark.eu/cylindrical_representationC%7B7E3C7C9C-EFCB-4F5A-9A6F-98A08F72FB1B%7D%7B76BD148C-D22A-4FE3-8CB2-0FB01F96698B%7D> .

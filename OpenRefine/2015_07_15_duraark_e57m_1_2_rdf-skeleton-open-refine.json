@@ -1,0 +1,649 @@
+[
+    {
+      "op": "rdf-extension/save-rdf-schema",
+      "schema": {
+        "prefixes": [
+          {
+            "name": "rdf",
+            "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          },
+          {
+            "name": "owl",
+            "uri": "http://www.w3.org/2002/07/owl#"
+          },
+          {
+            "name": "rdfs",
+            "uri": "http://www.w3.org/2000/01/rdf-schema#"
+          },
+          {
+            "name": "xs",
+            "uri": "http://www.w3.org/2001/XMLSchema#"
+          },
+          {
+            "name": "foaf",
+            "uri": "http://xmlns.com/foaf/0.1/"
+          },
+          {
+            "name": "dc",
+            "uri": "http://purl.org/dc/elements/1.1/"
+          }
+        ],
+        "baseUri": "http://data.duraark.eu/vocab/e57m/",
+        "rootNodes": [
+          {
+            "nodeType": "resource",
+            "value": "http://data.duraark.eu/vocab/e57m",
+            "links": [
+              {
+                "uri": "http://purl.org/dc/elements/1.1/title",
+                "curie": "dc:title",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - name",
+                  "expression": "value",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#versionInfo",
+                "curie": "owl:versionInfo",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - vc:minVersion",
+                  "expression": "value",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - elementFormDefault",
+                  "expression": "\"xs:schema - elementFormDefault: \"+value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/2002/07/owl#Ontology",
+                "curie": "owl:Ontology"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value+\"C\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/2002/07/owl#Class",
+                "curie": "owl:Class"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value+\"P\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+                  "expression": "value.replace(\"xs:\",\"http://www.w3.org/2001/XMLSchema#\")",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+                "curie": "owl:minCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - minOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+                "curie": "rdfs:domain",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+                "curie": "owl:maxCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - maxOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - default",
+                  "expression": "value.replace(\"xs:\",\"http://www.w3.org/2001/XMLSchema#\")",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "curie": "rdf:Property"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value+\"P\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+                "curie": "rdfs:domain",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": [
+                    {
+                      "uri": "http://www.w3.org/2002/07/owl#Class",
+                      "curie": "owl:Class"
+                    }
+                  ]
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+                "curie": "owl:minCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - minOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+                "curie": "owl:maxCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - maxOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+                  "expression": "value.replace(\"xs:\",\"http://www.w3.org/2001/XMLSchema#\")",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "curie": "rdf:Property"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+                "curie": "owl:minCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - minOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+                "curie": "owl:maxCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - maxOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+                  "expression": "value.replace(\"xs:\",\"http://www.w3.org/2001/XMLSchema#\")",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+                "curie": "rdfs:domain",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": [
+                    {
+                      "uri": "http://www.w3.org/2002/07/owl#Class",
+                      "curie": "owl:Class"
+                    }
+                  ]
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "curie": "rdf:Property"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value+\"P\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+                "curie": "owl:minCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - minOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+                "curie": "owl:maxCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - maxOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+                "curie": "rdfs:domain",
+                "target": {
+                  "nodeType": "resource",
+                  "value": "http://data.duraark.eu/vocab/buildm/E57File",
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "curie": "rdf:Property"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+            "expression": "value+\"P\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "curie": "rdf:Property"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+            "expression": "value+\"C\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/2002/07/owl#Class",
+                "curie": "owl:Class"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+            "expression": "value+\"P\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+                "curie": "rdfs:domain",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#range",
+                "curie": "rdfs:range",
+                "target": {
+                  "nodeType": "cell-as-resource",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+                  "expression": "value+\"C\"",
+                  "isRowNumberCell": false,
+                  "links": [],
+                  "rdfTypes": []
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#minCardinality",
+                "curie": "owl:minCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - minOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2002/07/owl#maxCardinality",
+                "curie": "owl:maxCardinality",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - maxOccurs",
+                  "expression": "value",
+                  "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": [
+              {
+                "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "curie": "rdf:Property"
+              }
+            ]
+          },
+          {
+            "nodeType": "cell-as-resource",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+            "expression": "value+\"C\"",
+            "isRowNumberCell": false,
+            "links": [
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                "curie": "rdfs:label",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              },
+              {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "curie": "rdfs:comment",
+                "target": {
+                  "nodeType": "cell-as-literal",
+                  "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:annotation - xs:documentation",
+                  "expression": "value",
+                  "lang": "en",
+                  "isRowNumberCell": false
+                }
+              }
+            ],
+            "rdfTypes": []
+          }
+        ]
+      },
+      "description": "Save RDF schema skeleton"
+    }
+  ]

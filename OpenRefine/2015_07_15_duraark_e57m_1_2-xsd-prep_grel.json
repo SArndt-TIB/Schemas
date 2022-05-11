@@ -1,0 +1,181 @@
+[
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "xs:schema - xs:element - name",
+      "description": "Fill down cells in column xs:schema - xs:element - name"
+    },
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name",
+      "description": "Fill down cells in column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - name"
+    },
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+      "description": "Fill down cells in column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name"
+    },
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "point_fields",
+                  "l": "point_fields"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+      "description": "Fill down cells in column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name"
+    },
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [
+              {
+                "v": {
+                  "v": "w",
+                  "l": "w"
+                }
+              },
+              {
+                "v": {
+                  "v": "x",
+                  "l": "x"
+                }
+              },
+              {
+                "v": {
+                  "v": "y",
+                  "l": "y"
+                }
+              },
+              {
+                "v": {
+                  "v": "z",
+                  "l": "z"
+                }
+              }
+            ],
+            "selectBlank": false,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+      "description": "Fill down cells in column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "expression": "value",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+            "invert": true,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [],
+            "selectBlank": true,
+            "selectError": false
+          },
+          {
+            "type": "list",
+            "name": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+            "expression": "value",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [],
+            "selectBlank": true,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "baseColumnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+      "expression": "grel:value",
+      "onError": "store-error",
+      "newColumnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+      "columnInsertIndex": 13,
+      "description": "Create column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties at index 13 based on column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name using expression grel:value"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [
+          {
+            "type": "list",
+            "name": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+            "expression": "value",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - type",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [],
+            "selectBlank": true,
+            "selectError": false
+          },
+          {
+            "type": "list",
+            "name": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - default",
+            "expression": "value",
+            "columnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - default",
+            "invert": false,
+            "omitBlank": false,
+            "omitError": false,
+            "selection": [],
+            "selectBlank": true,
+            "selectError": false
+          }
+        ],
+        "mode": "row-based"
+      },
+      "baseColumnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name",
+      "expression": "grel:value",
+      "onError": "store-error",
+      "newColumnName": "xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties",
+      "columnInsertIndex": 7,
+      "description": "Create column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name - Object Properties at index 7 based on column xs:schema - xs:element - xs:complexType - xs:sequence - xs:element - xs:complexType - xs:sequence - xs:element - name using expression grel:value"
+    }
+  ]

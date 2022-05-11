@@ -1,0 +1,2005 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "dcat",
+          "uri": "http://www.w3.org/ns/dcat#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "baseUri": "http://data.duraark.eu/vocab/e57m/dummy_rdf_data/",
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"e57scanC\"+cells[\"e57m - E57root - guid\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/guidP",
+              "curie": "http://data.duraark.eu/vocab/e57m/guidP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - guid",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/nameP",
+              "curie": "http://data.duraark.eu/vocab/e57m/nameP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/original_guidsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/original_guidsP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - original_guids",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/descriptionP",
+              "curie": "http://data.duraark.eu/vocab/e57m/descriptionP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - description",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_vendorP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_vendorP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - sensor_vendor",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_modelP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_modelP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - sensor_model",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_serial_numberP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_serial_numberP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - sensor_serial_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_hardware_versionP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_hardware_versionP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - sensor_hardware_version",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_software_versionP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_software_versionP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - sensor_software_version",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_firmware_versionP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_firmware_versionP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - sensor_firmware_version",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/temperatureP",
+              "curie": "http://data.duraark.eu/vocab/e57m/temperatureP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - temperature",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/relative_humidityP",
+              "curie": "http://data.duraark.eu/vocab/e57m/relative_humidityP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - relative_humidity",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/atmospheric_pressureP",
+              "curie": "http://data.duraark.eu/vocab/e57m/atmospheric_pressureP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - atmospheric_pressure",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/acquisition_startP",
+              "curie": "http://data.duraark.eu/vocab/e57m/acquisition_startP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - acquisition_start",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/acquisition_endP",
+              "curie": "http://data.duraark.eu/vocab/e57m/acquisition_endP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - acquisition_end",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/poseP",
+              "curie": "http://data.duraark.eu/vocab/e57m/poseP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"poseC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/translationP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/translationP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"translationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/x",
+                          "curie": "http://data.duraark.eu/vocab/e57m/x",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - translation - x",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/y",
+                          "curie": "http://data.duraark.eu/vocab/e57m/y",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - translation - y",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/z",
+                          "curie": "http://data.duraark.eu/vocab/e57m/z",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - translation - z",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/translationC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/translationC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/rotationP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/rotationP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"rotationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/w",
+                          "curie": "http://data.duraark.eu/vocab/e57m/w",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - rotation - w",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/y",
+                          "curie": "http://data.duraark.eu/vocab/e57m/y",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - rotation - y",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/z",
+                          "curie": "http://data.duraark.eu/vocab/e57m/z",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - rotation - z",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/x",
+                          "curie": "http://data.duraark.eu/vocab/e57m/x",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - pose - rotation - x",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/rotationC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/rotationC"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/poseC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/poseC"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/index_boundsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/index_boundsP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"index_boundsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/row_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/row_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - index_bounds - row_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/row_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/row_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - index_bounds - row_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/col_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/col_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - index_bounds - col_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/col_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/col_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - index_bounds - col_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/return_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/return_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - index_bounds - return_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/return_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/return_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - index_bounds - return_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/index_boundsC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/index_boundsC"
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+                    "curie": "owl:NamedIndividual"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/cartesian_boundsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/cartesian_boundsP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"cartesian_boundsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/x_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/x_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - cartesian_bounds - x_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/x_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/x_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - cartesian_bounds - x_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/y_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/y_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - cartesian_bounds - y_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/y_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/y_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - cartesian_bounds - y_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/z_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/z_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - cartesian_bounds - z_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/z_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/z_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - cartesian_bounds - z_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/cartesian_boundsC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/cartesian_boundsC"
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+                    "curie": "owl:NamedIndividual"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sphericalboundsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sphericalboundsP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"sphericalboundsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/azimuth_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/azimuth_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - sphericalbounds - azimuth_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/azimuth_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/azimuth_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - sphericalbounds - azimuth_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/elevation_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/elevation_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - sphericalbounds - elevation_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/elevation_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/elevation_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - sphericalbounds - elevation_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/range_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/range_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - sphericalbounds - range_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/range_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/range_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - sphericalbounds - range_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/sphericalboundsC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/sphericalboundsC"
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+                    "curie": "owl:NamedIndividual"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/intensity_limitsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/intensity_limitsP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"intensity_limitsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/intensity_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/intensity_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - intensity_limits - intensity_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/intensity_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/intensity_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - intensity_limits - intensity_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/intensity_limitsC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/intensity_limitsC"
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+                    "curie": "owl:NamedIndividual"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/pointSizeP",
+              "curie": "http://data.duraark.eu/vocab/e57m/pointSizeP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57scan - pointSize",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/color_limitsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/color_limitsP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"color_limitsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_blue_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_blue_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - color_limits - color_blue_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_blue_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_blue_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - color_limits - color_blue_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_green_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_green_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - color_limits - color_green_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_green_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_green_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - color_limits - color_green_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_red_maximumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_red_maximumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - color_limits - color_red_maximum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_red_minimumP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_red_minimumP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57scan - color_limits - color_red_minimum",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+                    "curie": "owl:NamedIndividual"
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/color_limitsC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/color_limitsC"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/point_fieldsP",
+              "curie": "http://data.duraark.eu/vocab/e57m/point_fieldsP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"point_fieldsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/anglesP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/anglesP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"anglesC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/angle_maximum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/angle_maximum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - angles - angle_maximum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/angle_minimum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/angle_minimum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - angles - angle_minimum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/angle_scaled_integer",
+                          "curie": "http://data.duraark.eu/vocab/e57m/angle_scaled_integer",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - angles - angle_scaled_integer",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/anglesC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/anglesC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/cartesian_fieldsP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/cartesian_fieldsP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"cartesian_fieldsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/cartesian_invalid_state_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/cartesian_invalid_state_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - cartesian_fields - cartesian_invalid_state_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/cartesian_x_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/cartesian_x_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - cartesian_fields - cartesian_x_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/cartesian_y_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/cartesian_y_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - cartesian_fields - cartesian_y_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/cartesian_z_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/cartesian_z_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - cartesian_fields - cartesian_z_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/cartesian_fieldsC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/cartesian_fieldsC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/index_fieldsP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/index_fieldsP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"index_fieldsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/column_index_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/column_index_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - column_index_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/column_index_maximum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/column_index_maximum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - column_index_maximum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/return_count_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/return_count_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - return_count_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/return_index_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/return_index_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - return_index_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/return_maximum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/return_maximum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - return_maximum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/row_index_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/row_index_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - row_index_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/row_index_maximum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/row_index_maximum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - index_fields - row_index_maximum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/index_fieldsC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/index_fieldsC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/intensity_color_fieldsP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"intensity_color_fieldsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/color_blue_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/color_blue_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - color_blue_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/color_green_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/color_green_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - color_green_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/color_red_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/color_red_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - color_red_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/intensity_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/intensity_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - intensity_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/intensity_scaled_integer",
+                          "curie": "http://data.duraark.eu/vocab/e57m/intensity_scaled_integer",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - intensity_scaled_integer",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/is_color_invalid_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/is_color_invalid_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - is_color_invalid_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/is_intensity_invalid_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/is_intensity_invalid_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - intensity_color_fields - is_intensity_invalid_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/intensity_color_fieldsC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/spherical_fieldsP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/spherical_fieldsP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"spherical_fieldsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/spherical_azimuth_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/spherical_azimuth_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - spherical_fields - spherical_azimuth_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/spherical_elevation_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/spherical_elevation_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - spherical_fields - spherical_elevation_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/spherical_invalid_state_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/spherical_invalid_state_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - spherical_fields - spherical_invalid_state_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/spherical_range_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/spherical_range_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - spherical_fields - spherical_range_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/spherical_fieldsC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/spherical_fieldsC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/time_fieldsP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/time_fieldsP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"time_fieldsC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/is_Time_Stamp_invalid",
+                          "curie": "http://data.duraark.eu/vocab/e57m/is_Time_Stamp_invalid",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - time_fields - is_Time_Stamp_invalid",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/time_Maximum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/time_Maximum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - time_fields - time_Maximum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/time_stamp_field",
+                          "curie": "http://data.duraark.eu/vocab/e57m/time_stamp_field",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - time_fields - time_stamp_field",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/time_fieldsC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/time_fieldsC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/point_rangeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/point_rangeP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"point_rangeC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57scan - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/point_range_maximum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/point_range_maximum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - point_range - point_range_maximum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/point_range_minimum",
+                          "curie": "http://data.duraark.eu/vocab/e57m/point_range_minimum",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - point_range - point_range_minimum",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/point_range_scaled_integer",
+                          "curie": "http://data.duraark.eu/vocab/e57m/point_range_scaled_integer",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57scan - point_fields - point_range - point_range_scaled_integer",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/point_rangeC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/point_rangeC"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/point_fieldsC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/point_fieldsC"
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+                    "curie": "owl:NamedIndividual"
+                  }
+                ]
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/e57scanC",
+              "curie": "http://data.duraark.eu/vocab/e57m/e57scanC"
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+              "curie": "owl:NamedIndividual"
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"E57rootC\"+cells[\"e57m - E57root - guid\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/guidP",
+              "curie": "http://data.duraark.eu/vocab/e57m/guidP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - guid",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/versionP",
+              "curie": "http://data.duraark.eu/vocab/e57m/versionP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - version",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/creation_datetimeP",
+              "curie": "http://data.duraark.eu/vocab/e57m/creation_datetimeP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - creation_datetime",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/coordinate_metadataP",
+              "curie": "http://data.duraark.eu/vocab/e57m/coordinate_metadataP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - coordinate_metadata",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/scan_countP",
+              "curie": "http://data.duraark.eu/vocab/e57m/scan_countP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - scan_count",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/image_countP",
+              "curie": "http://data.duraark.eu/vocab/e57m/image_countP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - image_count",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/scan_sizeP",
+              "curie": "http://data.duraark.eu/vocab/e57m/scan_sizeP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - scan_size",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/image_sizeP",
+              "curie": "http://data.duraark.eu/vocab/e57m/image_sizeP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - E57root - image_size",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+              "curie": "owl:NamedIndividual"
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/E57rootC",
+              "curie": "http://data.duraark.eu/vocab/e57m/E57rootC"
+            }
+          ]
+        },
+        {
+          "nodeType": "resource",
+          "value": "http://data.duraark.eu/vocab/e57m/dummy_rdf_data",
+          "links": [
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/E57rootP",
+              "curie": "http://data.duraark.eu/vocab/e57m/E57rootP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"E57rootC\"+cells[\"e57m - E57root - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/e57imageP",
+              "curie": "http://data.duraark.eu/vocab/e57m/e57imageP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"e57imageC\"+cells[\"e57m - E57root - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [],
+                "rdfTypes": []
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/e57scanP",
+              "curie": "http://data.duraark.eu/vocab/e57m/e57scanP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"e57scanC\"+cells[\"e57m - E57root - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [],
+                "rdfTypes": []
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://data.duraark.eu/vocab/buildm/E57File",
+              "curie": "http://data.duraark.eu/vocab/buildm/E57File"
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+              "curie": "owl:NamedIndividual"
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"e57imageC\"+cells[\"e57m - E57root - guid\"].value",
+          "isRowNumberCell": true,
+          "links": [
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/nameP",
+              "curie": "http://data.duraark.eu/vocab/e57m/nameP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - name",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/guidP",
+              "curie": "http://data.duraark.eu/vocab/e57m/guidP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - guid",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/representationP",
+              "curie": "http://data.duraark.eu/vocab/e57m/representationP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - representation",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/descriptionP",
+              "curie": "http://data.duraark.eu/vocab/e57m/descriptionP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - description",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/acquisition_datetimeP",
+              "curie": "http://data.duraark.eu/vocab/e57m/acquisition_datetimeP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - acquisition_datetime",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/associated_data3D_guidP",
+              "curie": "http://data.duraark.eu/vocab/e57m/associated_data3D_guidP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - associated_data3D_guid",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_vendorP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_vendorP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - sensor_vendor",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_modelP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_modelP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - sensor_model",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/sensor_serial_numberP",
+              "curie": "http://data.duraark.eu/vocab/e57m/sensor_serial_numberP",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "e57m - e57image - sensor_serial_number",
+                "expression": "value",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/poseP",
+              "curie": "http://data.duraark.eu/vocab/e57m/poseP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"poseC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/rotationC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/rotationC",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"rotationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/w",
+                          "curie": "http://data.duraark.eu/vocab/e57m/w",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - rotation - w",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/x",
+                          "curie": "http://data.duraark.eu/vocab/e57m/x",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - rotation - x",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/y",
+                          "curie": "http://data.duraark.eu/vocab/e57m/y",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - rotation - y",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/z",
+                          "curie": "http://data.duraark.eu/vocab/e57m/z",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - rotation - z",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/rotationC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/rotationC"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/translationP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/translationP",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "\"translationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                      "isRowNumberCell": true,
+                      "links": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/x",
+                          "curie": "http://data.duraark.eu/vocab/e57m/x",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - translation - x",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/y",
+                          "curie": "http://data.duraark.eu/vocab/e57m/y",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - translation - y",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        },
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/z",
+                          "curie": "http://data.duraark.eu/vocab/e57m/z",
+                          "target": {
+                            "nodeType": "cell-as-literal",
+                            "columnName": "e57m - e57image - pose - translation - z",
+                            "expression": "value",
+                            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                            "isRowNumberCell": false
+                          }
+                        }
+                      ],
+                      "rdfTypes": []
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/poseC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/poseC"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/visual_ref_representationP",
+              "curie": "http://data.duraark.eu/vocab/e57m/visual_ref_representationP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"visual_ref_representationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - visual_ref_representation - image_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - visual_ref_representation - image_mask_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - visual_ref_representation - image_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - visual_ref_representation - jpeg_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - visual_ref_representation - png_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/visual_ref_representationC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/visual_ref_representationC"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/spherical_representationP",
+              "curie": "http://data.duraark.eu/vocab/e57m/spherical_representationP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"spherical_representationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - image_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - image_mask_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - image_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - jpeg_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pixel_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pixel_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - pixel_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pixel_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pixel_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - pixel_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - spherical_representation - png_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/spherical_representationC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/spherical_representationC"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/pinhole_representationP",
+              "curie": "http://data.duraark.eu/vocab/e57m/pinhole_representationP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"pinhole_representationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - jpeg_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - png_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - image_mask_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - image_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - image_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/focal_lengthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/focal_lengthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - focal_length",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pixel_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pixel_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - pixel_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pixel_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pixel_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - pixel_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/principal_point_xP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/principal_point_xP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - principal_point_x",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/principal_point_yP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/principal_point_yP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - pinhole_representation - principal_point_y",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pinhole_representationC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pinhole_representationC"
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/cylindrical_representationP",
+              "curie": "http://data.duraark.eu/vocab/e57m/cylindrical_representationP",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"cylindrical_representationC\"+cells[\"e57m - E57root - guid\"].value+cells[\"e57m - e57image - guid\"].value",
+                "isRowNumberCell": true,
+                "links": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/jpeg_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - jpeg_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/png_image_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - png_image_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_mask_sizeP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - image_mask_size",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - image_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/image_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - image_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pixel_widthP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pixel_widthP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - pixel_width",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/pixel_heightP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/pixel_heightP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - pixel_height",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/radiusP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/radiusP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - radius",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  },
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/principal_point_yP",
+                    "curie": "http://data.duraark.eu/vocab/e57m/principal_point_yP",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "columnName": "e57m - e57image - cylindrical_representation - principal_point_y",
+                      "expression": "value",
+                      "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                      "isRowNumberCell": false
+                    }
+                  }
+                ],
+                "rdfTypes": [
+                  {
+                    "uri": "http://data.duraark.eu/vocab/e57m/cylindrical_representationC",
+                    "curie": "http://data.duraark.eu/vocab/e57m/cylindrical_representationC"
+                  }
+                ]
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://data.duraark.eu/vocab/e57m/e57imageC",
+              "curie": "http://data.duraark.eu/vocab/e57m/e57imageC"
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+              "curie": "owl:NamedIndividual"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  }
+]

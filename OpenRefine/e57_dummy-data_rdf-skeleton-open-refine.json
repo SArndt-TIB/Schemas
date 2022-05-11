@@ -1565,7 +1565,12 @@
                           }
                         }
                       ],
-                      "rdfTypes": []
+                      "rdfTypes": [
+                        {
+                          "uri": "http://data.duraark.eu/vocab/e57m/translationC",
+                          "curie": "http://data.duraark.eu/vocab/e57m/translationC"
+                        }
+                      ]
                     }
                   }
                 ],
